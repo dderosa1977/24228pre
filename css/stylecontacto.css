@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Sofia", cursive;
+    background-image: url("../assets/images/mushu\ banner3.jpg");
+    height: 80px;
+}
+
+nav {
+        display: flex;
+        /*flex-direction: row;*/
+        background-color: rgba(155, 6, 80, 0.973);
+        font-family: "Pacifico", cursive;
+        ul {           
+        list-style: none;
+        text-align: center;
+        li	 {
+        display: inline;       
+        margin: 1rem;    
+        padding: 0.5rem;
+        a	 {
+        text-decoration: none; 
+        color: #eee1eb;
+        }
+        & a:hover{
+            color: #e6c4e1;
+            background-color: #290203; 
+            border: 1px solid;
+            border-radius: 5px;
+            padding: 5px;
+            }
+          }
+         }
+        }
+
+li {
+    list-style: none;
+    padding: 16px 22px;
+    color: rgb(50, 0, 50);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(50, 0, 50);
+}
+
+.marca a{
+    font-size: 1rem;
+    padding: 0 0 0 16px;
+    color: rgb(50, 0, 50);
+    list-style: none;
+}
+
+#carrito {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width:500px;
+    max-height:600px;
+    outline: 1px solid rgb(80, 77, 77);
+    margin: 5px 0;
+    border-radius: 2px;
+    background-color: rgba(211, 175, 188, 0.784);
+    box-shadow: 4px 4px 10px rgba(119, 117, 117, 0.897), -4px -4px 10px rgba(119, 119, 119, 0.897);
+}
+
+form section {
+   display: flex;
+   flex-direction:column;
+}
+
+#boton {
+    width: 90px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 0 28px 28px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#boton:hover {
+    background-color:  rgb(52, 52, 53);
+    color: white;
+}
+
+form textarea {
+    width: 800px;
+    max-width: 200px;
+    min-width: 200px;
+    min-height: 50px;
+    max-height: 80px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+section input {
+    height: 30px;
+    border-radius: 5px;
+    width: 80%;
+    min-width: 40%;
+    margin: 0 auto;
+}
+
+
+
+section label {
+    padding: 5px 0 5px 5px;
+}
+
+/* Responsive Media Query */
+
+@media(width < 400px){
+    main form textarea {
+        width: 20%;
+    }
+
+
+    .nav li {
+        padding: 5px;
+    }
+}
+
+footer {
+    font-family: "Sofia", cursive;
+    background: linear-gradient(90deg, #f21273 20%, #f8cfffc6);
+    color: white;
+    margin: 0;
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 2em;
+    
+    .footy {
+        display: flex;
+        flex-wrap: wrap;
+      a {
+            text-decoration: none;
+            font-family: "Sofia", cursive;
+            font-size: larger;
+            color: #360e0e;
+            img {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            }
+        }
+    }
+}
