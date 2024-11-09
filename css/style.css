@@ -64,7 +64,7 @@
     Main 	{
     grid-area: main;
     text-align: center;
-    h2 {
+    h1, h3 {
         font-family: "Sofia", cursive;
         color: #000000;
     
