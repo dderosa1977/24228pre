@@ -95,16 +95,16 @@
                 Consulta <input type="radio" name="mensaje" id="2">
         </label>
         <label for="nombre">Nombre:
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre"required minlength="2" maxlength="15">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre"required minlength="2" maxlength="15" required>
         </label>
-        <label for="apellido">Apellido:
+        <label for="apellido">Apellido: 
             <input type="text" name="apellido" id="apellido" placeholder="Apellido"required minlength="2" maxlength="15">
         </label>   
         <label for="email">Email:
             <input type="email" name="email" id="email" placeholder="cuenta@dominio.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
         </label>
         <label for="message">Tu mensaje:
-            <textarea name="message" placeholder="Dejanos tu mensaje"></textarea>
+            <textarea name="message" placeholder="Dejanos tu mensaje" required></textarea>
         </label>
 
         <button type="submit">Enviar</button>
