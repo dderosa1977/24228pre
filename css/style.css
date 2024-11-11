@@ -84,6 +84,10 @@
         }
     }
 }
+h2 {
+    font-family: "Sofia", cursive;     
+    text-align: center;
+    }
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
@@ -91,7 +95,6 @@
     padding: 1.25em;
     max-width: 70%;
     margin: 0 auto;
-    font-family: "Sofia", cursive;
   }
   
   .resenia {
@@ -162,8 +165,9 @@
   }
 
     .contacto {
-    font-family: "Sofia", cursive;
-        }
+            font-family: "Sofia", cursive;
+              text-align: center;
+              }
 
     form {
         display: flex;
