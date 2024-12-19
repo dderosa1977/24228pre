@@ -1,138 +1,182 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/style.css">
-<title>MUSHU PRE-ENTREGA TALENTO TECH</title>
-<link rel="shortcut icon" href="./assets/icons/moshuicon2.ico" type="image/x-i">
-</head>
-
-<body>
-    <header>
-    <h1>Mushu Bakery</h1>
-    </header>
-
-<nav>
-<ul>
-<li>
-<a href="./pages/producto.html">Productos</a>
-</li>
-<li>
-<a href="#Resena">Reseñas</a>
-</li>
-<li>
-<a href="#contacto">Contacto</a>
-</li>
-</ul>
-</nav>
-
-<main>
-<br><br><br><br><br><br><br><br><br><br><br><br>
-<h1>Una dulce tentación. <br> </h1>
-<h3>Ingresa a la sección "Productos" y conocé nuestras delicias </h3> 
-<div class="container">
-    <div class="card">
-    <a href="./pages/producto.html">
-    <img src="assets/images/producto1.jpg" alt="Imagen tarta frutal">
-    </a>
-    </div>
-    <div class="card">
-    <a href="./pages/producto.html">
-    <img src="assets/images/producto2.jpg" alt="Imagen trata de ricota">
-    </a>
-    </div>
-    <div class="card">
-        <a href="./pages/producto.html">
-        <img src="assets/images/producto4.jpg" alt="Imagen donas ">
-        <div class="item">
-        </a>
-    </div>
-</div>
-
-</main>
-
-<section class="secciones" id="Resena">
-    <h2 class="color2">Lo que opinan nuestros clientes es muy importante para nosotros</h2>
-    <div class="grid-container"> 
-      <div class="resenia R1">  
-        <h2>Conte, Carla Alma:</h2> 
-        <p>Todo muy rico. Las donas una bomba.</p> 
-      </div> 
-      <div class="resenia R2"> 
-        <h2>Quito, Esteban:</h2> 
-        <p>Excelente relación precio calidad. Muy recomendable!</p> 
-      </div> 
-      <div class="resenia R3">
-        <h2>Alvarez, Raul Carlos:</h2> 
-        <p>Lo conitos son deliciosos.</p> 
-      </div> 
-      <div class="resenia R4"> 
-        <h2> Gonza, Marcela </h2> 
-        <p>Felicitaciones!!! Son la mejor confiteria virtual!.</p> 
-      </div> 
-      <div class="resenia R5"> 
-        <h2> Argenti, Jose </h2> 
-        <p>Riquisimos los conitos!!!</p> 
-      </div> 
-      <div class="resenia R6"> 
-        <h2> Sabatini, Gabriela </h2> 
-        <p> Muy rico.</p> 
-      </div> 
-  </div>
-
-<p class="Rese color2">-  Gracias a todos por sus comentarios - </p>
-</section>
-
-<section id="contacto" class="contacto">
-  <br><br>
-    <h2>Contacto</h2>
-
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form action="https://formspree.io/f/xgveojbe" method="POST">
-        <label for="mensaje">Indique el motivo de su mensaje: <br>
-                Reseña <input type="radio" name="mensaje" id="1"> 
-                Consulta <input type="radio" name="mensaje" id="2">
-        </label>
-        <label for="nombre">Nombre:
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre"required minlength="2" maxlength="15" required>
-        </label>
-        <label for="apellido">Apellido: 
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido"required minlength="2" maxlength="15">
-        </label>   
-        <label for="email">Email:
-            <input type="email" name="email" id="email" placeholder="cuenta@dominio.com" pattern="/^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/" required>
-        </label>
-        <label for="message">Tu mensaje:
-            <textarea name="message" placeholder="Dejanos tu mensaje" required></textarea>
-        </label>
-
-        <button type="submit">Enviar</button>
-    </form>
-    </form>
-</section>
-
-<footer>
-<p>Desarrollado por Derosa - Talento Tech @2024 </p>
-<div class="footy">
-    <div class="red">
-      <a href="mailto:mushubakery@gmail.com?Subject=Consulta%20a%20Mushu%20del%20Bakery"> 
-        <img src="./assets/icons/Email.svg"  alt="Imagen de email">
-        </a>
-        </div>
-        <div class="red">
-        <a href="https://www.instagram.com/"> 
-        <img src="./assets/icons/Instagram.svg" alt="Instagram">
-        </a>
-        </div>
-        <div class="red">
-         <a href=https://api.whatsapp.com/send/?phone=541112345678>  
-         <img src="./assets/icons/WhatsappIcon.svg"  alt="Whatsapp">
-         </a>
-        </div>
-</div>
-</footer>
-
-</body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mushu Bakery</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <!--<link rel="icon" href="./assets/icons/mushuicon.ico" type="imge/x-icon">-->
+        <link rel="shortcut icon" href="./assets/icons/moshuicon2.ico" type="image/x-i">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="./assets/images/logo.jpg" alt="Mushu logo">
+                </div>
+                <nav class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="#inicio">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#productos">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#contacto">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="#reseñas">Reseñas</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- icono carrito -->
+                <div class="cart-icon" id="cart-icon">
+                    🛒 <span id="cart-count">0</span>
+                </div>
+                <!-- Modal del carrito -->
+                <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Producto</th>
+                                                <th>Cantidad</th>
+                                                <th>Precio</th>
+                                                <th>Subtotal</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="cart-table-body">
+                                        <!-- Aca es donde se llenarán los productos dinámicamente -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h5 id="cart-total" class="text-end">Total: $0.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cierre del header-container -->
+        </header>
+        <main>
+            <section id="inicio">
+                <h1>Bienvenidos a Mushu Bakery</h1>
+                <p>"Una dulce tentación..."</p>
+            </section>
+            <section>
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/golosinas2.JPG" class="d-block w-100 carousel-img" alt="golosinasChocolate">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/tortas6.JPG" class="d-block w-100 carousel-img" alt="Torta1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/tortas5.JPG" class="d-block w-100 carousel-img" alt="tartita">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/golosinas3.JPG" class="d-block w-100 carousel-img" alt="golosina_azucar">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fastly.picsum.photos/id/889/5000/3333.jpg?hmac=-O0rhbZQyAeWh9Nsz7E0F6RoQs4DYOIfeDdFmjPtV8c" class="d-block w-100 carousel-img" alt="frambuesas">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://fastly.picsum.photos/id/1080/5000/3335.jpg?hmac=f3IGc_xKMhNBScyKii5v-BBFTRReM46kzAkt2PijkqM" class="d-block w-100 carousel-img" alt="fresas">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="custom-paragraph">Productos de primera calidad, para darte un gusto</p>
+            </section>
+            <section id="productos">
+                <h2>Nuestros Productos</h2>
+                <div class="productos-container row" id="productos-container">
+                <!-- Aquí se generarán las cards de productos -->
+                </div>
+            </section>
+            <section id="reseñas">
+                <h2>Lo que opinan nuestros clientes es muy importante para nosotros</h2>
+                <div class="reseñas-container">
+                    <div class="reseña">
+                        <p>"Todo muy rico. Las donas una bomba."</p>
+                        <span>- Conte, Carla Alma</span>
+                    </div>
+                    <div class="reseña">
+                        <p>"Excelente relación precio calidad. Muy recomendable!"</p>
+                        <span>- Alvarez, Raul Carlos</span>
+                    </div>
+                    <div class="reseña">
+                        <p>"Lo conitos son deliciosos.¡Me encantan!"</p>
+                        <span>- Sofía Martínez</span>
+                    </div>
+                    <div class="reseña">
+                        <p>"Felicitaciones!!! Son la mejor confiteria virtual!"</p>
+                        <span>- Gonza, Marcela</span>
+                    </div>
+                </div>
+            </section>
+            <section id="contacto">
+                <h2>Dejanos tu reseña / consulta:</h2>
+                <form action="https://formspree.io/f/xgveojbe" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Desarrollado por Derosa - Talento Tech @2024 </p>
+            <div class="footy">
+                <div class="red">
+                  <a href="mailto:mushubakery@gmail.com?Subject=Consulta%20a%20Mushu%20del%20Bakery"> 
+                    <img src="./assets/icons/Email.svg"  alt="Imagen de email">
+                    </a>
+                    </div>
+                    <div class="red">
+                    <a href="https://www.instagram.com/"> 
+                    <img src="./assets/icons/Instagram.svg" alt="Instagram">
+                    </a>
+                    </div>
+                    <div class="red">
+                     <a href=https://api.whatsapp.com/send/?phone=541112345678>  
+                     <img src="./assets/icons/WhatsappIcon.svg"  alt="Whatsapp">
+                     </a>
+                    </div>
+            </div>
+            </footer>
+            
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
 </html>
