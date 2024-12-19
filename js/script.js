@@ -68,7 +68,8 @@ function renderizarProductos() {
         card.classList.add("card");
 
         card.innerHTML = `
-            <img src="${producto.imagen}" alt="${producto.nombre}">
+            <a href="./pages/detalles.html">
+            <img src="${producto.imagen}" alt="${producto.nombre}"> </a>
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
             <p><strong>$${producto.precio.toFixed(2)}</strong></p>
@@ -200,10 +201,5 @@ function toggleMenu() {
 // Seleccionamos el formulario
 const form = document.getElementById('contact-form');
 
-form.addEventListener('submit', function (event) {
-    
-    setTimeout(() => {
-        form.reset(); // Limpia todos los campos
-    }, 100); 
-});
+
 
