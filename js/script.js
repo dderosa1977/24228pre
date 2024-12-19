@@ -68,7 +68,7 @@ function renderizarProductos() {
         card.classList.add("card");
 
         card.innerHTML = `
-            <a href="./pages/detalles.html">
+            <a href="../pages/detalles.html">
             <img src="${producto.imagen}" alt="${producto.nombre}"> </a>
             <h3>${producto.nombre}</h3>
             <p>${producto.descripcion}</p>
